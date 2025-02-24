@@ -1,0 +1,23 @@
+
+##open the terminal in vtysh mode then tap  in conf t:
+
+
+no ipv6 forwarding
+## Setup interface eth1
+interface eth1
+ip address 10.1.1.6/30
+ip ospf area 0
+## Setup interface lo
+interface lo  
+ip address 1.1.1.3/32 
+ip ospf area 0
+## Setup bgp
+router bgp 1
+neighbor 1.1.1.1 remote-as 1
+neighbor 1.1.1.1 update-source lo
+## Setup evpn
+address-family l2vpn evpn
+neighbor 1.1.1.1 activate
+exit-address-family
+#
+router ospf
