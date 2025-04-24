@@ -56,11 +56,8 @@ Build and simulate a **VXLAN**-based network using GNS3 and Docker containers. T
 
 ## 🔍 Screenshots & Demo (Optional)
 
-If you have any screenshots or terminal outputs, add them here like this:
-
-```markdown
 ![VXLAN Setup in GNS3](assets/vxlan-gns3-topology.png)![alt text](image.png)
-<img src="assets/vxlan-demo.gif" alt="VXLAN demo" width="600"/>
+<img src="assets/vxlan-gns3-topology.png" alt="VXLAN demo" width="600"/>
 
 
 
